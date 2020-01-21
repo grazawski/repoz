@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!DOCTYPE shop [
+  <!ELEMENT shop (department+)>
+  <!ELEMENT department (shelf+)>
+  <!ELEMENT shelf (item+)>
+  <!ELEMENT item (name)>
+  <!ELEMENT name (#PCDATA)>
+  
+  <!ATTLIST shelf domain CDATA #REQUIRED>
+]>
+<shop>
+	<department>
+		<shelf domain="clothes">
+			<item>
+				<name> jeans </name>
+			</item>
+			<item>
+				<name> dresses </name>
+			</item>	
+		</shelf>
+	</department>
+	<department>
+		<shelf domain="food">
+			<item>
+				<name> nutella </name>
+			</item>
+			<item>
+				<name> chips </name>
+			</item>
+		</shelf>
+		<shelf domain="sports">
+			<item>
+				<name> sneakers </name>
+			</item>
+			<item>
+				<name> bags </name>
+			</item>
+		</shelf>
+	</department>
+</shop>
